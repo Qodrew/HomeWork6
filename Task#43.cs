@@ -17,3 +17,7 @@ PrintAnsver(k1, k2, b1, b2);
 
 
 void PrintAnsver (float firstNum, float secondNum, float thirdNum, float fourthNum) {  //нахождение точки пересечения прямых
+    float xNum = ((fourthNum - thirdNum) / (firstNum - secondNum));
+    float yNum = (secondNum*thirdNum-firstNum*fourthNum)/(secondNum-firstNum);
+    System.Console.WriteLine($"Точка пересечения прямых: ({xNum}; {yNum})");
+}
